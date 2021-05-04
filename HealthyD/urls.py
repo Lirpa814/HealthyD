@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app_login/', views.app_login),
     path('app_get_info/', views.app_get_info),
+    path('app_post_info/', views.app_post_info),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

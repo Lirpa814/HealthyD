@@ -26,7 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="92d8153b-127d-4e31-a889-d97cde943df6">
-        <schema name="main" object-types="index, dataset trigger, view, column, constraint, table" />
+        <schema name="main" object-types="index, dataset trigger, view, constraint, column, table" />
       </connection>
     </loaded-nodes>
   </component>
@@ -37,7 +37,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="92d8153b-127d-4e31-a889-d97cde943df6" object-ref="schemas/main/tables/auth_group" />
+      <object connection-id="92d8153b-127d-4e31-a889-d97cde943df6" object-ref="schemas/main/tables/membership_membership" />
       <object connection-id="92d8153b-127d-4e31-a889-d97cde943df6" object-ref="schemas/main/tables/auth_user" />
     </open-files>
   </component>
@@ -45,7 +45,7 @@
     <connection id="92d8153b-127d-4e31-a889-d97cde943df6" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.auth_user" active-filter-id="">
+    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.auth_user" active-filter-id="EMPTY_FILTER">
       <filter id="b41bec15-56ea-4d66-8767-0a0a7bf45881" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
@@ -55,6 +55,22 @@
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.auth_group_permissions" active-filter-id="">
+      <filter id="02d9dfa5-d5ac-440c-9be1-df103b349ec8" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.django_session" active-filter-id="">
+      <filter id="8c6d9666-2295-44fb-9d8b-8f38a36b6f3f" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="session_key" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.membership_membership" active-filter-id="EMPTY_FILTER">
+      <filter id="eb37038e-13dc-4328-a2cc-5d3321691fba" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="92d8153b-127d-4e31-a889-d97cde943df6" dataset="main.auth_permission" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
