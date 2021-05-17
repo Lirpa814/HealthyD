@@ -55,7 +55,7 @@ def app_login(request, cursor=None):
             return JsonResponse(data, safe=False, status=200)
         else:
             print("실패")
-            return JsonResponse({'code': '1001', 'msg': '로그인실패입니다.'}, status=200)
+            return JsonResponse({'code': '1001', 'msg': '로그인실패입니다.'}, status=401)
 
 
 @csrf_exempt
